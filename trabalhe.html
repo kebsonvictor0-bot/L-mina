@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhe Conosco - LÚMINA</title>
+  <style>
+    body {font-family: 'Poppins', Arial, sans-serif; margin:0; padding:0; background:#fff; color:#333;}
+    .navbar {display:flex; justify-content:space-between; align-items:center; padding:15px 50px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    .logo img {height:70px;}
+    .nav-links {list-style:none; display:flex; gap:25px;}
+    .nav-links a {text-decoration:none; color:#b30000; font-weight:500;}
+    .nav-links a:hover {color:#3e2723;}
+    section {padding:60px 20px; max-width:1000px; margin:0 auto; text-align:center;}
+    h1 {color:#b30000; margin-bottom:20px;}
+    .vagas {display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-bottom:40px;}
+    .vagas img {width:100%; max-width:300px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+    form {display:flex; flex-direction:column; gap:15px; max-width:500px; margin:0 auto; text-align:left;}
+    form input, form button {padding:12px; font-size:1rem; border-radius:8px;}
+    form input[type="file"] {border:none;}
+    form input, form textarea {border:1px solid #ccc;}
+    form button {background:#b30000; color:#fff; border:none; cursor:pointer; font-weight:600;}
+    form button:hover {background:#3e2723;}
+    .success-message {margin-top:15px; color:green; display:none;}
+    footer {background:#3e2723; color:#f5f5dc; text-align:center; padding:20px; margin-top:40px;}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><img src="logo.png" alt="Logo Lúmina"></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="index.html#sobre">Sobre</a></li>
+      <li><a href="index.html#servicos">Serviços</a></li>
+      <li><a href="index.html#diferenciais">Diferenciais</a></li>
+      <li><a href="index.html#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Trabalhe Conosco -->
+  <section>
+    <h1>Trabalhe Conosco</h1>
+    <p>Confira as vagas disponíveis e envie seu currículo em PDF:</p>
+
+    <div class="vagas">
+      <img src="Planfleto 1.png" alt="Vaga 1">
+      <img src="Planfleto 2.png" alt="Vaga 2">
+      <img src="Planfleto 3.png" alt="Vaga 3">
+      <img src="Planfleto 4.png" alt="Vaga 4">
+      <img src="Planfleto 5.png" alt="Vaga 5">
+    </div>
+
+    <form id="trabalheForm">
+      <label>Nome:</label>
+      <input type="text" name="nome" required>
+
+      <label>E-mail:</label>
+      <input type="email" name="email" required>
+
+      <label>Currículo (PDF):</label>
+      <input type="file" name="curriculo" accept="application/pdf" required>
+
+      <button type="submit">Enviar</button>
+      <p id="successMessage" class="success-message">✅ Currículo enviado com sucesso dentro de 24 horas retornaremos com você !
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LÚMINA - Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('trabalheForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      successMessage.style.display = 'block';
+      form.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LÚMINA - Inovação e Conexão</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    /* 🔧 Navbar - fundo bege */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #f5f5dc; /* bege */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* ✅ Logo com melhor qualidade */
+    .logo img {
+      height: 80px;
+      width: auto;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #b30000;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #3e2723;
+    }
+
+    /* Hero - 🔻 altura reduzida */
+    header.hero {
+      background: #b30000;
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px; /* altura menor */
+    }
+
+    header.hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+
+    /* Seções */
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #b30000;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    #sobre, #diferenciais {
+      background: #f5f5dc;
+      border-radius: 12px;
+      padding: 50px;
+    }
+
+    #diferenciais {
+      background: #fff;
+      color: #333;
+    }
+
+    .cards {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: #f5f5dc;
+      padding: 25px;
+      border-radius: 12px;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    /* ✅ Balão vermelho para "Função da Empresa" */
+    .funcao h3 {
+      display: inline-block;
+      background: #b30000;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .funcao {
+      margin-top: 30px;
+      background: #fff8e1;
+      padding: 25px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      color: #333;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* ✅ Título vermelho para diferenciais */
+    #diferenciais h2 {
+      color: #b30000;
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background: #3e2723;
+      color: #f5f5dc;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.1.png" alt="Logo Lúmina">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Iluminando Caminhos, Conectando Ideias</h1>
+  </header>
+
+  <!-- Quem Somos -->
+  <section id="sobre">
+    <h2>Quem Somos?</h2>
+    <p>
+      A LÚMINA é uma empresa voltada para a inovação, tecnologia e criatividade, que nasceu com o propósito de ser uma luz orientadora para pessoas e organizações que buscam se destacar em um mercado cada vez mais competitivo. Nosso compromisso é entregar soluções modernas e eficazes, transformando desafios em oportunidades.
+    </p>
+
+    <!-- ✅ Função da Empresa -->
+    <div class="funcao">
+      <h3>Função da Empresa</h3>
+      <p>
+        A função da Lúmina é desenvolver projetos que unam estratégia, tecnologia e inovação. Atuamos desde o planejamento até a execução, oferecendo suporte completo para que nossos clientes alcancem resultados concretos e sustentáveis.
+      </p>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <h2>Áreas de Atuação</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Consultoria em Inovação</h3>
+        <p>Ajudamos empresas a pensarem fora da caixa, criando estratégias diferenciadas para alcançar novos patamares.</p>
+      </div>
+      <div class="card">
+        <h3>Desenvolvimento de Sistemas</h3>
+        <p>Criamos soluções digitais sob medida, como aplicativos, softwares e plataformas web, que facilitam processos e aumentam a eficiência.</p>
+      </div>
+      <div class="card">
+        <h3>Transformação Digital</h3>
+        <p>Auxiliamos organizações a migrarem para o ambiente digital, modernizando seus processos e tornando-as mais competitivas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section id="diferenciais">
+    <h2>Por Que Escolher a LÚMINA?</h2>
+    <p>✔ <strong>Equipe apaixonada por inovação:</strong> especialistas criativos e atualizados com as tendências do mercado.<br>
+       ✔ <strong>Atendimento personalizado:</strong> estratégias sob medida para cada cliente.<br>
+       ✔ <strong>Resultados comprovados:</strong> entregas com impacto real e mensurável.<br>
+       ✔ <strong>Suporte contínuo:</strong> acompanhamento em todas as etapas do projeto.<br>
+       ✔ <strong>Compromisso com a excelência:</strong> superamos expectativas e agregamos valor ao seu negócio.<br>
+       ✔ <strong>Parcerias de longo prazo:</strong> relações de confiança e crescimento conjunto.<br>
+       ✔ <strong>Tecnologia de ponta:</strong> soluções modernas, escaláveis e eficientes.
+    </p>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <p><strong>WhatsApp:</strong> (31) 93856-7854</p>
+    <p><strong>Telefone:</strong> (31) 3856-7854</p>
+    <p><strong>E-mail:</strong> empresalumina4@gmail.com</p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 LÚMINA - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
